@@ -388,6 +388,23 @@ header nav {
   flex: 50;
 }
 
+@media (max-width:1000px){
+  .ariori_inner{
+    flex-direction: column;
+    height: 900px;
+  }
+  .ariori_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .ariori_inner>.hdr_1 {
+    text-align: center;
+  }
+}
+
 /*portfolio*/
 .portfolio_inner {
   margin-top: 100px;
