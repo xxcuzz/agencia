@@ -11,6 +11,8 @@
 
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=fb06bd27-9598-4eff-b9b6-68c32314b1b6" type="text/javascript"></script>
 
+  <script src="Assets/email-validation.js"></script>
+
   <title>Agencia</title>
 </head>
 
@@ -218,14 +220,13 @@
   <div class="container">
     <div class="contact_inner">
       <h1>Contact Us</h1>
-      <form action="">
+      <form action="" name="form1">
         <div class="contact_form">
-          <input type="text" id = "_fname" name="firstname" placeholder="First Name">
-          <input type="text" id = "_lname" name="lastname" placeholder="Last Name">
-          <input type="text" id = "_email" name = "emailaddr" placeholder="Your Email">
+          <input type="text" id = "_fname" name="firstname" placeholder="First Name" required>
+          <input type="text" id = "_lname" name="lastname" placeholder="Last Name" required>
+          <input type="email" id = "_email" name = "emailaddr" placeholder="Your Email" required>
           <input type="text" id = "_website" name="website" placeholder="Your Website">
-          <textarea type="text" id = "_mes" name="mes" placeholder="Your Message">
-          </textarea>
+          <textarea type="text" id="_mes" placeholder="Your Message" cols="30" rows="4" required></textarea>
         </div>
         <input type="submit" value = "Send Message">
       </form>
