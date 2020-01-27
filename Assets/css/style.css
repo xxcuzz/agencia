@@ -166,6 +166,11 @@ nav {
   margin-top: 0px;
 }
 
+.arrow img:hover {
+  transition: all 0.2 ease 0;
+  transform: scale(1.1);
+}
+
 .arrow_left {
   margin-right: 35px;
 }
@@ -222,7 +227,6 @@ nav {
 #ariori_hdr2 {
   text-align: left;
 }
-
 
 #clients_hdr1 {
   color: #ffffff;
@@ -439,7 +443,6 @@ nav {
   margin-top: 100px;
 }
 
-
 .climg {
   margin-top: 85px;
 }
@@ -496,12 +499,12 @@ nav {
 }
 
 form {
-  height:350px;
+  height: 350px;
 }
 
 .contact_form {
   display: grid;
-  width:600px;
+  width: 600px;
   grid-column-gap: 27px;
   grid-row-gap: 20px;
   grid-template-columns: repeat(2, 1fr);
@@ -525,7 +528,7 @@ form {
   resize: none;
 }
 
-input[type="submit"] {
+#form_submit {
   width: 228px;
   height: 46px;
   border: 0px;
@@ -536,7 +539,7 @@ input[type="submit"] {
   border-radius: 18px;
 }
 
-input[type="submit"]:hover {
+#form_submit:hover {
   transition: all 0.2s ease 0s;
   transform: scale(1.05, 1.05);
 }
