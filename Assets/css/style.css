@@ -215,6 +215,7 @@ nav {
 }
 
 .s_block h2 {
+  margin-top: 34px;
   margin-bottom: 28px;
 }
 
@@ -311,8 +312,8 @@ nav {
 }
 
 .s_block {
-  width: 30%;
-  height: 223px;
+  width: 32%;
+  height: 230px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -320,7 +321,6 @@ nav {
 
 .s_block img {
   align-self: center;
-  margin-bottom: 32px;
 }
 
 .s_block h4 {
