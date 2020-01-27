@@ -176,38 +176,60 @@ nav {
   margin-top: 85px;
 }
 
-.whoweare_inner>h1, .services_inner>h1, .ariori_inner h1, .portfolio_inner h1, .team_inner h1, .contact_inner h1 {
+.hdr_1 {
   text-transform: uppercase;
   font-family: lato;
   font-size: 36px;
   color: #343434;
-}
-
-.whoweare_inner>h1, .services_inner>h1, .portfolio_inner h1, .clients_inner h1, .team_inner h1, .contact_inner h1, .contact_inner h1 {
   text-align: center;
 }
 
-.ariori_inner h1 {
+.ariori_inner h1, h2 {
   text-align: left;
 }
 
-.whoweare_inner>h2, .services_inner>h2, .ariori_inner h2, .portfolio_inner h2, .team_inner h2 {
-  margin-top: 30px;
+.contact_inner h1 {
+  margin-bottom: 50px;
 }
 
-.whoweare_inner>h2, .services_inner>h2, .s_block>h2, .ariori_inner h2, .portfolio_inner h2, .team_inner h2 {
+.hdr_2 {
   font-size: 18px;
   font-weight: 400;
   font-family: Merriweather;
   color: #979797;
-}
-
-.whoweare_inner>h2, .services_inner>h2, .s_block>h2, .portfolio_inner h2, .clients_inner h2, .team_inner h2 {
   text-align: center;
+  margin-top: 30px;
 }
 
-.ariori_inner h2 {
+.jeff_text h2 {
+  font-family: Merriweather;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.team_inner h2 {
+  margin-bottom: 55px;
+}
+
+.s_block h2 {
+  margin-bottom: 28px;
+}
+
+#ariori_hdr2 {
   text-align: left;
+}
+
+
+#clients_hdr1 {
+  color: #ffffff;
+}
+
+#clients_hdr2 {
+  color: #ffffff;
+  margin-top: 35px;
 }
 
 /*Jeff*/
@@ -236,15 +258,6 @@ nav {
 
 .jeff_text {
   top: 50%;
-}
-
-.jeff_text h2 {
-  font-family: Merriweather;
-  font-size: 18px;
-  font-weight: 400;
-  text-align: center;
-  color: #ffffff;
-  white-space: nowrap;
 }
 
 .portrait {
@@ -308,10 +321,6 @@ nav {
 .s_block img {
   align-self: center;
   margin-bottom: 32px;
-}
-
-.s_block h2 {
-  margin-bottom: 28px;
 }
 
 .s_block h4 {
@@ -430,20 +439,6 @@ nav {
   margin-top: 100px;
 }
 
-.clients_inner h1 {
-  text-transform: uppercase;
-  font-family: lato;
-  font-size: 36px;
-  color: #ffffff;
-}
-
-.clients_inner h2 {
-  font-size: 18px;
-  font-weight: 400;
-  font-family: Merriweather;
-  color: #ffffff;
-  margin-top: 35px;
-}
 
 .climg {
   margin-top: 85px;
@@ -456,10 +451,6 @@ nav {
 
 .team_inner {
   margin-top: 100px;
-}
-
-.team_inner h2 {
-  margin-bottom: 55px;
 }
 
 .team_ph {
@@ -493,10 +484,6 @@ nav {
 .contact_inner {
   margin-top: 63px;
   margin-bottom: 65px;
-}
-
-.contact_inner h1 {
-  margin-bottom: 50px;
 }
 
 .contact_inner, form {
