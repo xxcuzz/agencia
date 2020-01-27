@@ -42,7 +42,7 @@ div {
 }
 
 /*navigation*/
-nav {
+header nav {
   float: right;
   padding-top: 48px;
 }
@@ -542,4 +542,59 @@ form {
 #form_submit:hover {
   transition: all 0.2s ease 0s;
   transform: scale(1.05, 1.05);
+}
+
+/*Footer*/
+footer {
+  background-color: #343434;
+}
+
+.footer_inner{
+  height: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#f_menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#f_menu li {
+  float: left;
+  display: block;
+  margin-right: 35px;
+}
+
+#f_menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: lato;
+  color: #ffffff;
+  font-size: 17px;
+}
+
+#f_menu a:hover {
+  color: #3ec6ff;
+}
+
+#f_social {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+}
+
+#f_social li {
+  display: block;
+  float: left;
+  margin-left: 40px;
 }
