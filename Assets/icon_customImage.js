@@ -31,7 +31,7 @@ ymaps.ready(function() {
   myMap.behaviors.disable('drag');
   myMap.behaviors.disable('scrollZoom');
   var balloon = myMap.balloon.open(myMap.getCenter(), {
-    content: '<p id = "mem"> "9833 Martina Path"</p>',
+    content: '<p id = "mem"> 9833 Martina Path</p>',
   }, {
     closeButton: false,
     offset: [3, -40],

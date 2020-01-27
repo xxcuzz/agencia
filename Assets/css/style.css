@@ -336,6 +336,23 @@ header nav {
   overflow: hidden;
 }
 
+@media(max-width: 600px) {
+  .services_blocks{
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+  .s_block{
+    height: 400px;
+  }
+  .service_row {
+    height: 0;
+  }
+}
+
+
 /*Ariori*/
 .ariori_vid {
   background: url("../images/vid.jpg")center no-repeat;
@@ -479,8 +496,9 @@ header nav {
 #mem {
   font-family: lato;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 400;
   color: #8f8f8f;
+  text-align: center;
 }
 
 /*Contact Us*/
