@@ -336,7 +336,7 @@ header nav {
   overflow: hidden;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 800px) {
   .services_blocks{
     align-self: center;
     justify-content: center;
@@ -353,10 +353,6 @@ header nav {
   }
   .service_row {
     height: 200px;
-  }
-
-  .s_block>img:hover {
-
   }
 }
 
