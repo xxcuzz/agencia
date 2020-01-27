@@ -487,7 +487,3 @@ nav {
   font-weight: bold;
   color: #8f8f8f;
 }
-
-.ymaps-b-balloon:hover {
-  box-shadow: (0,10,10,0,0.8);
-}
