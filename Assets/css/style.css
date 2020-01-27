@@ -342,13 +342,21 @@ header nav {
     justify-content: center;
     align-items: center;
     align-content: center;
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
   }
   .s_block{
-    height: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
   }
   .service_row {
-    height: 0;
+    height: 200px;
+  }
+
+  .s_block>img:hover {
+
   }
 }
 
@@ -389,10 +397,6 @@ header nav {
 }
 
 @media (max-width:1000px){
-  .ariori_inner{
-    flex-direction: column;
-    height: 900px;
-  }
   .ariori_text{
     display: flex;
     flex-direction: column;
@@ -402,6 +406,9 @@ header nav {
   }
   .ariori_inner>.hdr_1 {
     text-align: center;
+  }
+  .ariori_vid {
+    display: none;
   }
 }
 
@@ -480,6 +487,21 @@ header nav {
 .climg {
   margin-top: 85px;
 }
+
+@media (max-width:1170px){
+  .climg img{
+    opacity: 0;
+    transition: ease all .5s;
+  }
+}
+@media (min-width:1170px){
+  .climg img{
+    opacity: 1;
+    transition: ease all .5s;
+  }
+}
+
+
 
 /*Meet our team*/
 .team {
