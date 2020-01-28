@@ -18,22 +18,36 @@
 
 <body>
   <header>
-    <div class="container">
       <div class="header_inner">
-        <div class="logo">
-          <h1>Agencia</h1>
+        <div class="container">
+          <div class="logo">
+            <h1>Agencia</h1>
+          </div>
+          <nav>
+            <ul class="menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+
+
     </div>
   </header>
+  <!--jQuery-->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+  <script>
+    $(document).scroll(function() {
+      if($(document).scrollTop() > $('header').height() + 10)
+        $('.header_inner').addClass('fixed');
+      else
+        $('.header_inner').removeClass('fixed');
+    });
+  </script>
+
   <div class="intro">
     <div class="container">
       <div class="intro_inner">
@@ -68,7 +82,7 @@
         <div class="portrait"></div>
 
         <div class="jeff_text">
-          <h2 class="jeff_quote">“When it comes to coding, these guys deliver on the entire new level.<br>I would highly recommend to anyone to work with them.”</h2>
+          <h2 class="jeff_quote">“When it comes to coding, these guys deliver on the entire new level.I would highly recommend to anyone to work with them.”</h2>
           <br>
           <h2 class="jeff_author">Jeff Mc Fairlane, Cusco</h2>
         </div>
@@ -232,10 +246,10 @@
     <div class="container">
       <div class="footer_inner">
         <nav>
-          <ul  id="f_menu">
+          <ul id="f_menu">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Team</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
