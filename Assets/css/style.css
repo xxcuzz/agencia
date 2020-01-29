@@ -12,6 +12,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  transition: all 0.5s ease;
 }
 
 @media (max-width:650px) {
@@ -21,13 +22,17 @@ header {
     align-items: center;
     justify-content: center;
   }
+
   .fixed {
     display: none;
   }
+  .header_inner li:nth-child(1) {
+margin-left: 0;
+  }
 }
 
-@media(max-width:500px){
-  .header_inner nav{
+@media(max-width:450px) {
+  .header_inner nav {
     display: none;
   }
 }
@@ -38,6 +43,7 @@ header {
   width: 100%;
   height: 55px;
   opacity: 0.97;
+  transition: all 0.5s ease;
 }
 
 .fixed:hover {
@@ -48,16 +54,16 @@ header {
   height: 20px;
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
 }
 
 .fixed .logo {
   padding: 0 0 5px 0;
 }
 
- .fixed nav {
-   padding: 0;
- }
+.fixed nav {
+  padding: 0;
+}
 
 body {
   margin: 0;
@@ -382,7 +388,7 @@ header nav {
 }
 
 @media(max-width: 800px) {
-  .services_blocks{
+  .services_blocks {
     align-self: center;
     justify-content: center;
     align-items: center;
@@ -391,16 +397,22 @@ header nav {
     flex-wrap: wrap;
     align-content: space-between;
   }
-  .s_block{
-    height: 100px;
+
+  .s_block {
+    height: 400px;
     display: flex;
     flex-direction: column;
   }
-  .service_row {
-    height: 200px;
-  }
-}
 
+  .service_row {
+    height: 0px;
+  }
+
+  .services {
+    margin-bottom: 0px;
+  }
+
+}
 
 /*Ariori*/
 .ariori_vid {
@@ -437,19 +449,25 @@ header nav {
   flex: 50;
 }
 
-@media (max-width:1000px){
-  .ariori_text{
+@media (max-width:1200px) {
+  .ariori_inner {
+    flex-direction: column;
+    justify-content: center;
+    height: 700px;
+  }
+
+  .ariori_text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
-    justify-content: center;
+    flex:20;
   }
-  .ariori_inner>.hdr_1 {
-    text-align: center;
-  }
+
   .ariori_vid {
-    display: none;
+    background-size: cover;
+    flex: 75;
+    height: 400px;
+    margin: 10% 10% 10% 10%;
   }
 }
 
@@ -564,16 +582,16 @@ header nav {
 
 @media (max-width: 1100px) {
   .team {
-    height:850px;
+    height: 850px;
     min-width: 400px;
   }
-
 }
 
 @media(max-width:565px) {
   .ph:nth-child(3), .ph:nth-child(4) {
     display: none;
   }
+
   .team_ph {
     flex-direction: column;
   }
@@ -595,8 +613,8 @@ header nav {
 
 /*Contact Us*/
 .contact_inner {
-  margin-top: 63px;
-  margin-bottom: 65px;
+  margin-top: 72px;
+  margin-bottom: 75px;
 }
 
 .contact_inner, form {
@@ -605,7 +623,6 @@ header nav {
   align-items: center;
   align-content: center;
   justify-content: center;
-  overflow: auto;
 }
 
 form {
@@ -614,7 +631,6 @@ form {
 
 .contact_form {
   display: grid;
-  width: 600px;
   grid-column-gap: 27px;
   grid-row-gap: 20px;
   grid-template-columns: repeat(2, 1fr);
@@ -654,18 +670,12 @@ form {
   transform: scale(1.05, 1.05);
 }
 
-@media (max-width: 700px) {
-  .contact_form {
-    width: 450px;
-  }
-}
-
 /*Footer*/
 footer {
   background-color: #343434;
 }
 
-.footer_inner{
+.footer_inner {
   height: 115px;
   display: flex;
   align-items: center;
@@ -674,7 +684,7 @@ footer {
 
 footer nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #f_menu {
@@ -706,11 +716,14 @@ footer nav {
   margin: 0;
   padding: 0;
   list-style-type: none;
-
 }
 
 #f_social li {
   display: block;
   float: left;
   margin-left: 40px;
+}
+
+@media (max-width:600px) {
+  .
 }
