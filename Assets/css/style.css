@@ -725,5 +725,19 @@ footer nav {
 }
 
 @media (max-width:600px) {
-  .
+  .footer_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+ #f_social>li:first-child {
+    margin-left: 0;
+  }
+  #f_menu>li:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 500px){
+  
 }
