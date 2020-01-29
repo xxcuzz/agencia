@@ -24,15 +24,15 @@ header {
   }
 
   .fixed {
-    display: none;
+    padding-bottom: 80px;
   }
   .header_inner li:nth-child(1) {
-margin-left: 0;
+    margin-left: 0;
   }
 }
 
 @media(max-width:450px) {
-  .header_inner nav {
+  .fixed, .header_inner nav {
     display: none;
   }
 }
