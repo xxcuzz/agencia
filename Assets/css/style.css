@@ -1,3 +1,9 @@
+@media (max-width: 1230px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
 header {
   width: 100%;
   position: absolute;
@@ -29,6 +35,9 @@ header {
 
   .header_inner li:nth-child(1) {
     margin-left: 0;
+  }
+  .intro_inner>.btn {
+    margin-bottom: 40px;
   }
 }
 
@@ -385,24 +394,21 @@ header nav {
   font-family: Roboto;
   color: #848484;
   text-align: center;
-  overflow: hidden;
 }
 
-@media(max-width: 800px) {
+@media(max-width: 600px) {
   .services_blocks {
-    align-self: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
   }
 
   .s_block {
-    height: 400px;
+    height: 300px;
     display: flex;
     flex-direction: column;
+    width: 80%;
   }
 
   .service_row {
@@ -453,7 +459,7 @@ header nav {
   .ariori_inner {
     flex-direction: column;
     justify-content: center;
-    height: 700px;
+    height: 500px;
   }
 
   .ariori_text {
@@ -461,13 +467,19 @@ header nav {
     flex-direction: column;
     align-items: center;
     flex: 20;
+
+  }
+  .ariori_text::before {
+    margin-top: 30px;
+  }
+  #ariori_hdr2 {
+    margin-bottom: 30px;
   }
 
   .ariori_vid {
     background-size: cover;
     flex: 75;
     height: 400px;
-    margin: 10% 10% 10% 10%;
   }
 }
 
@@ -488,6 +500,18 @@ header nav {
     "p1 p1 p2"
     "p3 p4 p2"
     "p5 p6 p6";
+}
+
+@media (max-width: 600px) {
+  .portfolio_pics {
+    grid-template-areas:
+    'p1'
+    'p2'
+    'p3'
+    'p4'
+    'p5'
+    'p6';
+  }
 }
 
 .portfolio_pics>div>.image_content {
@@ -567,6 +591,7 @@ header nav {
 .team_ph {
   display: flex;
   flex-wrap: wrap;
+flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
@@ -583,15 +608,12 @@ header nav {
 @media (max-width: 1100px) {
   .team {
     height: 850px;
-    min-width: 400px;
   }
 }
-
 @media(max-width:565px) {
-  .ph:nth-child(3), .ph:nth-child(4) {
-    display: none;
+  .team {
+    height: 1600px;
   }
-
   .team_ph {
     flex-direction: column;
   }
