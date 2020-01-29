@@ -36,9 +36,6 @@ header {
   .header_inner li:nth-child(1) {
     margin-left: 0;
   }
-  .intro_inner>.btn {
-    margin-bottom: 40px;
-  }
 }
 
 @media(max-width:450px) {
@@ -168,6 +165,12 @@ header nav {
 .title {
   font-family: lato;
   font-size: 69px;
+}
+
+@media (max-width: 725px) {
+  .title {
+    font-size: 48px;
+  }
 }
 
 .subtitle {
@@ -323,6 +326,7 @@ header nav {
 }
 
 .jeff_text {
+  width: 80%;
   top: 50%;
 }
 
