@@ -171,7 +171,25 @@
           <h2 class="hdr_2" id="ariori_hdr2">How me made history with Ariori Studio</h2>
         </div>
         <div class="ariori_vid">
-          <input type="submit" src="Assets/images/play.png" class="play" value="">
+          <div class="dark"></div>
+
+          <video id="ar_vid" preload="none" width="671px" poster="Assets\images\vid.jpg">
+            <source src="Assets\video\VirtualOfficeTour.mp4" type="video/mp4">
+            <source src="Assets\video\VirtualOfficeTour.webm" type="video/webm">
+          </video>
+
+          <script>
+            $(function() {
+              var h = $("#ar_vid").height();
+              var w = $("#ar_vid").width();
+              $(".dark").height(h);
+              $(".dark").width(w);
+
+            })
+          </script>
+
+          <img src="Assets/images/play.png" alt="" class="play">
+
         </div>
       </div>
     </div>
