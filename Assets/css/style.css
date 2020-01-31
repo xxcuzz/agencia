@@ -457,7 +457,6 @@ header nav {
   z-index: 0;
   width: 671px;
   height: 377px;
-
 }
 
 .ariori_text {
@@ -470,6 +469,15 @@ header nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  @media(max-width: 650px) {
+     .ariori_vid {
+     display: none;
+     }
+     .ariori_inner{
+       height: 250px;
+     }
   }
 
   .ariori_text {
