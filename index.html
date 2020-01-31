@@ -171,9 +171,8 @@
           <h2 class="hdr_2" id="ariori_hdr2">How me made history with Ariori Studio</h2>
         </div>
         <div class="ariori_vid">
-          <div class="dark"></div>
 
-          <video id="ar_vid" preload="none" width="671px" poster="Assets\images\vid.jpg">
+          <video id="ar_vid" preload="none" width="671px" height="377px">
             <source src="Assets\video\VirtualOfficeTour.mp4" type="video/mp4">
             <source src="Assets\video\VirtualOfficeTour.webm" type="video/webm">
           </video>
@@ -184,11 +183,21 @@
               var w = $("#ar_vid").width();
               $(".dark").height(h);
               $(".dark").width(w);
+            })
+          </script>
 
+          <script>
+            $(function() {
+              $('.play').click(function() {
+                $('.dark, .play, .poster').hide();
+                $('#ar_vid').get(0).play();
+                $('video').attr('controls', 'controls');
+              })
             })
           </script>
 
           <img src="Assets/images/play.png" alt="" class="play">
+
 
         </div>
       </div>
